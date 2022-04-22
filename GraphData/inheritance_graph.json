@@ -1,0 +1,170 @@
+[
+  {
+    "Name": "System.Collections.Generic.List\u00601[T]",
+    "Adj": [
+      "System.Object",
+      "System.Collections.Generic.IList\u00601[T]",
+      "System.Collections.Generic.ICollection\u00601[T]",
+      "System.Collections.Generic.IEnumerable\u00601[T]",
+      "System.Collections.IEnumerable",
+      "System.Collections.IList",
+      "System.Collections.ICollection",
+      "System.Collections.Generic.IReadOnlyList\u00601[T]",
+      "System.Collections.Generic.IReadOnlyCollection\u00601[T]"
+    ],
+    "NodeType": "class"
+  },
+  {
+    "Name": "System.Object",
+    "Adj": [],
+    "NodeType": "class"
+  },
+  {
+    "Name": "System.Collections.Generic.IList\u00601[T]",
+    "Adj": [
+      "System.Collections.Generic.ICollection\u00601[T]",
+      "System.Collections.Generic.IEnumerable\u00601[T]",
+      "System.Collections.IEnumerable"
+    ],
+    "NodeType": "interface"
+  },
+  {
+    "Name": "System.Collections.Generic.ICollection\u00601[T]",
+    "Adj": [
+      "System.Collections.Generic.IEnumerable\u00601[T]",
+      "System.Collections.IEnumerable"
+    ],
+    "NodeType": "interface"
+  },
+  {
+    "Name": "System.Collections.Generic.IEnumerable\u00601[T]",
+    "Adj": [
+      "System.Collections.IEnumerable"
+    ],
+    "NodeType": "interface"
+  },
+  {
+    "Name": "System.Collections.IEnumerable",
+    "Adj": [],
+    "NodeType": "interface"
+  },
+  {
+    "Name": "System.Collections.IList",
+    "Adj": [
+      "System.Collections.ICollection",
+      "System.Collections.IEnumerable"
+    ],
+    "NodeType": "interface"
+  },
+  {
+    "Name": "System.Collections.ICollection",
+    "Adj": [
+      "System.Collections.IEnumerable"
+    ],
+    "NodeType": "interface"
+  },
+  {
+    "Name": "System.Collections.Generic.IReadOnlyList\u00601[T]",
+    "Adj": [
+      "System.Collections.Generic.IReadOnlyCollection\u00601[T]",
+      "System.Collections.Generic.IEnumerable\u00601[T]",
+      "System.Collections.IEnumerable"
+    ],
+    "NodeType": "interface"
+  },
+  {
+    "Name": "System.Collections.Generic.IReadOnlyCollection\u00601[T]",
+    "Adj": [
+      "System.Collections.Generic.IEnumerable\u00601[T]",
+      "System.Collections.IEnumerable"
+    ],
+    "NodeType": "interface"
+  },
+  {
+    "Name": "System.Collections.Generic.Dictionary\u00602[TKey,TValue]",
+    "Adj": [
+      "System.Object",
+      "System.Collections.Generic.IDictionary\u00602[TKey,TValue]",
+      "System.Collections.Generic.ICollection\u00601[System.Collections.Generic.KeyValuePair\u00602[TKey,TValue]]",
+      "System.Collections.Generic.IEnumerable\u00601[System.Collections.Generic.KeyValuePair\u00602[TKey,TValue]]",
+      "System.Collections.IEnumerable",
+      "System.Collections.IDictionary",
+      "System.Collections.ICollection",
+      "System.Collections.Generic.IReadOnlyDictionary\u00602[TKey,TValue]",
+      "System.Collections.Generic.IReadOnlyCollection\u00601[System.Collections.Generic.KeyValuePair\u00602[TKey,TValue]]",
+      "System.Runtime.Serialization.ISerializable",
+      "System.Runtime.Serialization.IDeserializationCallback"
+    ],
+    "NodeType": "class"
+  },
+  {
+    "Name": "System.Collections.Generic.IDictionary\u00602[TKey,TValue]",
+    "Adj": [
+      "System.Collections.Generic.ICollection\u00601[System.Collections.Generic.KeyValuePair\u00602[TKey,TValue]]",
+      "System.Collections.Generic.IEnumerable\u00601[System.Collections.Generic.KeyValuePair\u00602[TKey,TValue]]",
+      "System.Collections.IEnumerable"
+    ],
+    "NodeType": "interface"
+  },
+  {
+    "Name": "System.Collections.Generic.ICollection\u00601[System.Collections.Generic.KeyValuePair\u00602[TKey,TValue]]",
+    "Adj": [
+      "System.Collections.Generic.IEnumerable\u00601[System.Collections.Generic.KeyValuePair\u00602[TKey,TValue]]",
+      "System.Collections.IEnumerable"
+    ],
+    "NodeType": "interface"
+  },
+  {
+    "Name": "System.Collections.Generic.IEnumerable\u00601[System.Collections.Generic.KeyValuePair\u00602[TKey,TValue]]",
+    "Adj": [
+      "System.Collections.IEnumerable"
+    ],
+    "NodeType": "interface"
+  },
+  {
+    "Name": "System.Collections.IDictionary",
+    "Adj": [
+      "System.Collections.ICollection",
+      "System.Collections.IEnumerable"
+    ],
+    "NodeType": "interface"
+  },
+  {
+    "Name": "System.Collections.Generic.IReadOnlyDictionary\u00602[TKey,TValue]",
+    "Adj": [
+      "System.Collections.Generic.IReadOnlyCollection\u00601[System.Collections.Generic.KeyValuePair\u00602[TKey,TValue]]",
+      "System.Collections.Generic.IEnumerable\u00601[System.Collections.Generic.KeyValuePair\u00602[TKey,TValue]]",
+      "System.Collections.IEnumerable"
+    ],
+    "NodeType": "interface"
+  },
+  {
+    "Name": "System.Collections.Generic.IReadOnlyCollection\u00601[System.Collections.Generic.KeyValuePair\u00602[TKey,TValue]]",
+    "Adj": [
+      "System.Collections.Generic.IEnumerable\u00601[System.Collections.Generic.KeyValuePair\u00602[TKey,TValue]]",
+      "System.Collections.IEnumerable"
+    ],
+    "NodeType": "interface"
+  },
+  {
+    "Name": "System.Runtime.Serialization.ISerializable",
+    "Adj": [],
+    "NodeType": "interface"
+  },
+  {
+    "Name": "System.Runtime.Serialization.IDeserializationCallback",
+    "Adj": [],
+    "NodeType": "interface"
+  },
+  {
+    "Name": "System.Collections.Generic.Queue\u00601[T]",
+    "Adj": [
+      "System.Object",
+      "System.Collections.Generic.IEnumerable\u00601[T]",
+      "System.Collections.IEnumerable",
+      "System.Collections.ICollection",
+      "System.Collections.Generic.IReadOnlyCollection\u00601[T]"
+    ],
+    "NodeType": "class"
+  }
+]

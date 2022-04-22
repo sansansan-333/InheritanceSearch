@@ -1,0 +1,75 @@
+digraph {
+	node [shape=rect]
+	"System.Collections.Generic.List`1[T]" [color=green]
+	"System.Collections.Generic.List`1[T]" -> "System.Object"
+	"System.Collections.Generic.List`1[T]" -> "System.Collections.Generic.IList`1[T]"
+	"System.Collections.Generic.List`1[T]" -> "System.Collections.Generic.ICollection`1[T]"
+	"System.Collections.Generic.List`1[T]" -> "System.Collections.Generic.IEnumerable`1[T]"
+	"System.Collections.Generic.List`1[T]" -> "System.Collections.IEnumerable"
+	"System.Collections.Generic.List`1[T]" -> "System.Collections.IList"
+	"System.Collections.Generic.List`1[T]" -> "System.Collections.ICollection"
+	"System.Collections.Generic.List`1[T]" -> "System.Collections.Generic.IReadOnlyList`1[T]"
+	"System.Collections.Generic.List`1[T]" -> "System.Collections.Generic.IReadOnlyCollection`1[T]"
+	"System.Object" [color=green]
+	"System.Collections.Generic.IList`1[T]" [color=blue]
+	"System.Collections.Generic.IList`1[T]" -> "System.Collections.Generic.ICollection`1[T]"
+	"System.Collections.Generic.IList`1[T]" -> "System.Collections.Generic.IEnumerable`1[T]"
+	"System.Collections.Generic.IList`1[T]" -> "System.Collections.IEnumerable"
+	"System.Collections.Generic.ICollection`1[T]" [color=blue]
+	"System.Collections.Generic.ICollection`1[T]" -> "System.Collections.Generic.IEnumerable`1[T]"
+	"System.Collections.Generic.ICollection`1[T]" -> "System.Collections.IEnumerable"
+	"System.Collections.Generic.IEnumerable`1[T]" [color=blue]
+	"System.Collections.Generic.IEnumerable`1[T]" -> "System.Collections.IEnumerable"
+	"System.Collections.IEnumerable" [color=blue]
+	"System.Collections.IList" [color=blue]
+	"System.Collections.IList" -> "System.Collections.ICollection"
+	"System.Collections.IList" -> "System.Collections.IEnumerable"
+	"System.Collections.ICollection" [color=blue]
+	"System.Collections.ICollection" -> "System.Collections.IEnumerable"
+	"System.Collections.Generic.IReadOnlyList`1[T]" [color=blue]
+	"System.Collections.Generic.IReadOnlyList`1[T]" -> "System.Collections.Generic.IReadOnlyCollection`1[T]"
+	"System.Collections.Generic.IReadOnlyList`1[T]" -> "System.Collections.Generic.IEnumerable`1[T]"
+	"System.Collections.Generic.IReadOnlyList`1[T]" -> "System.Collections.IEnumerable"
+	"System.Collections.Generic.IReadOnlyCollection`1[T]" [color=blue]
+	"System.Collections.Generic.IReadOnlyCollection`1[T]" -> "System.Collections.Generic.IEnumerable`1[T]"
+	"System.Collections.Generic.IReadOnlyCollection`1[T]" -> "System.Collections.IEnumerable"
+	"System.Collections.Generic.Dictionary`2[TKey,TValue]" [color=green]
+	"System.Collections.Generic.Dictionary`2[TKey,TValue]" -> "System.Object"
+	"System.Collections.Generic.Dictionary`2[TKey,TValue]" -> "System.Collections.Generic.IDictionary`2[TKey,TValue]"
+	"System.Collections.Generic.Dictionary`2[TKey,TValue]" -> "System.Collections.Generic.ICollection`1[System.Collections.Generic.KeyValuePair`2[TKey,TValue]]"
+	"System.Collections.Generic.Dictionary`2[TKey,TValue]" -> "System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[TKey,TValue]]"
+	"System.Collections.Generic.Dictionary`2[TKey,TValue]" -> "System.Collections.IEnumerable"
+	"System.Collections.Generic.Dictionary`2[TKey,TValue]" -> "System.Collections.IDictionary"
+	"System.Collections.Generic.Dictionary`2[TKey,TValue]" -> "System.Collections.ICollection"
+	"System.Collections.Generic.Dictionary`2[TKey,TValue]" -> "System.Collections.Generic.IReadOnlyDictionary`2[TKey,TValue]"
+	"System.Collections.Generic.Dictionary`2[TKey,TValue]" -> "System.Collections.Generic.IReadOnlyCollection`1[System.Collections.Generic.KeyValuePair`2[TKey,TValue]]"
+	"System.Collections.Generic.Dictionary`2[TKey,TValue]" -> "System.Runtime.Serialization.ISerializable"
+	"System.Collections.Generic.Dictionary`2[TKey,TValue]" -> "System.Runtime.Serialization.IDeserializationCallback"
+	"System.Collections.Generic.IDictionary`2[TKey,TValue]" [color=blue]
+	"System.Collections.Generic.IDictionary`2[TKey,TValue]" -> "System.Collections.Generic.ICollection`1[System.Collections.Generic.KeyValuePair`2[TKey,TValue]]"
+	"System.Collections.Generic.IDictionary`2[TKey,TValue]" -> "System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[TKey,TValue]]"
+	"System.Collections.Generic.IDictionary`2[TKey,TValue]" -> "System.Collections.IEnumerable"
+	"System.Collections.Generic.ICollection`1[System.Collections.Generic.KeyValuePair`2[TKey,TValue]]" [color=blue]
+	"System.Collections.Generic.ICollection`1[System.Collections.Generic.KeyValuePair`2[TKey,TValue]]" -> "System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[TKey,TValue]]"
+	"System.Collections.Generic.ICollection`1[System.Collections.Generic.KeyValuePair`2[TKey,TValue]]" -> "System.Collections.IEnumerable"
+	"System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[TKey,TValue]]" [color=blue]
+	"System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[TKey,TValue]]" -> "System.Collections.IEnumerable"
+	"System.Collections.IDictionary" [color=blue]
+	"System.Collections.IDictionary" -> "System.Collections.ICollection"
+	"System.Collections.IDictionary" -> "System.Collections.IEnumerable"
+	"System.Collections.Generic.IReadOnlyDictionary`2[TKey,TValue]" [color=blue]
+	"System.Collections.Generic.IReadOnlyDictionary`2[TKey,TValue]" -> "System.Collections.Generic.IReadOnlyCollection`1[System.Collections.Generic.KeyValuePair`2[TKey,TValue]]"
+	"System.Collections.Generic.IReadOnlyDictionary`2[TKey,TValue]" -> "System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[TKey,TValue]]"
+	"System.Collections.Generic.IReadOnlyDictionary`2[TKey,TValue]" -> "System.Collections.IEnumerable"
+	"System.Collections.Generic.IReadOnlyCollection`1[System.Collections.Generic.KeyValuePair`2[TKey,TValue]]" [color=blue]
+	"System.Collections.Generic.IReadOnlyCollection`1[System.Collections.Generic.KeyValuePair`2[TKey,TValue]]" -> "System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[TKey,TValue]]"
+	"System.Collections.Generic.IReadOnlyCollection`1[System.Collections.Generic.KeyValuePair`2[TKey,TValue]]" -> "System.Collections.IEnumerable"
+	"System.Runtime.Serialization.ISerializable" [color=blue]
+	"System.Runtime.Serialization.IDeserializationCallback" [color=blue]
+	"System.Collections.Generic.Queue`1[T]" [color=green]
+	"System.Collections.Generic.Queue`1[T]" -> "System.Object"
+	"System.Collections.Generic.Queue`1[T]" -> "System.Collections.Generic.IEnumerable`1[T]"
+	"System.Collections.Generic.Queue`1[T]" -> "System.Collections.IEnumerable"
+	"System.Collections.Generic.Queue`1[T]" -> "System.Collections.ICollection"
+	"System.Collections.Generic.Queue`1[T]" -> "System.Collections.Generic.IReadOnlyCollection`1[T]"
+}

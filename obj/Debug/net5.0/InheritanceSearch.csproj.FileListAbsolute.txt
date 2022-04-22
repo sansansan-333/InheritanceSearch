@@ -1,0 +1,15 @@
+/Users/tanjiriku/develope/csharp/InheritanceSearch/bin/Debug/net5.0/InheritanceSearch.deps.json
+/Users/tanjiriku/develope/csharp/InheritanceSearch/bin/Debug/net5.0/InheritanceSearch.runtimeconfig.json
+/Users/tanjiriku/develope/csharp/InheritanceSearch/bin/Debug/net5.0/InheritanceSearch.runtimeconfig.dev.json
+/Users/tanjiriku/develope/csharp/InheritanceSearch/bin/Debug/net5.0/InheritanceSearch.dll
+/Users/tanjiriku/develope/csharp/InheritanceSearch/bin/Debug/net5.0/ref/InheritanceSearch.dll
+/Users/tanjiriku/develope/csharp/InheritanceSearch/bin/Debug/net5.0/InheritanceSearch.pdb
+/Users/tanjiriku/develope/csharp/InheritanceSearch/obj/Debug/net5.0/InheritanceSearch.csprojAssemblyReference.cache
+/Users/tanjiriku/develope/csharp/InheritanceSearch/obj/Debug/net5.0/InheritanceSearch.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tanjiriku/develope/csharp/InheritanceSearch/obj/Debug/net5.0/InheritanceSearch.AssemblyInfoInputs.cache
+/Users/tanjiriku/develope/csharp/InheritanceSearch/obj/Debug/net5.0/InheritanceSearch.AssemblyInfo.cs
+/Users/tanjiriku/develope/csharp/InheritanceSearch/obj/Debug/net5.0/InheritanceSearch.csproj.CoreCompileInputs.cache
+/Users/tanjiriku/develope/csharp/InheritanceSearch/obj/Debug/net5.0/InheritanceSearch.dll
+/Users/tanjiriku/develope/csharp/InheritanceSearch/obj/Debug/net5.0/ref/InheritanceSearch.dll
+/Users/tanjiriku/develope/csharp/InheritanceSearch/obj/Debug/net5.0/InheritanceSearch.pdb
+/Users/tanjiriku/develope/csharp/InheritanceSearch/obj/Debug/net5.0/InheritanceSearch.genruntimeconfig.cache
