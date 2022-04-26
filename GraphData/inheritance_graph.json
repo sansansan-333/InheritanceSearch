@@ -1,5 +1,111 @@
 [
   {
+    "Name": "System.Int32[]",
+    "Adj": [
+      "System.Array",
+      "System.Collections.Generic.IList\u00601[System.Int32]",
+      "System.Collections.Generic.ICollection\u00601[System.Int32]",
+      "System.Collections.Generic.IEnumerable\u00601[System.Int32]",
+      "System.Collections.Generic.IReadOnlyList\u00601[System.Int32]",
+      "System.Collections.Generic.IReadOnlyCollection\u00601[System.Int32]"
+    ],
+    "NodeType": "class"
+  },
+  {
+    "Name": "System.Array",
+    "Adj": [
+      "System.Object",
+      "System.ICloneable",
+      "System.Collections.IList",
+      "System.Collections.ICollection",
+      "System.Collections.IEnumerable",
+      "System.Collections.IStructuralComparable",
+      "System.Collections.IStructuralEquatable"
+    ],
+    "NodeType": "class"
+  },
+  {
+    "Name": "System.Object",
+    "Adj": [],
+    "NodeType": "class"
+  },
+  {
+    "Name": "System.ICloneable",
+    "Adj": [],
+    "NodeType": "interface"
+  },
+  {
+    "Name": "System.Collections.IList",
+    "Adj": [
+      "System.Collections.ICollection",
+      "System.Collections.IEnumerable"
+    ],
+    "NodeType": "interface"
+  },
+  {
+    "Name": "System.Collections.ICollection",
+    "Adj": [
+      "System.Collections.IEnumerable"
+    ],
+    "NodeType": "interface"
+  },
+  {
+    "Name": "System.Collections.IEnumerable",
+    "Adj": [],
+    "NodeType": "interface"
+  },
+  {
+    "Name": "System.Collections.IStructuralComparable",
+    "Adj": [],
+    "NodeType": "interface"
+  },
+  {
+    "Name": "System.Collections.IStructuralEquatable",
+    "Adj": [],
+    "NodeType": "interface"
+  },
+  {
+    "Name": "System.Collections.Generic.IList\u00601[System.Int32]",
+    "Adj": [
+      "System.Collections.Generic.ICollection\u00601[System.Int32]",
+      "System.Collections.Generic.IEnumerable\u00601[System.Int32]",
+      "System.Collections.IEnumerable"
+    ],
+    "NodeType": "interface"
+  },
+  {
+    "Name": "System.Collections.Generic.ICollection\u00601[System.Int32]",
+    "Adj": [
+      "System.Collections.Generic.IEnumerable\u00601[System.Int32]",
+      "System.Collections.IEnumerable"
+    ],
+    "NodeType": "interface"
+  },
+  {
+    "Name": "System.Collections.Generic.IEnumerable\u00601[System.Int32]",
+    "Adj": [
+      "System.Collections.IEnumerable"
+    ],
+    "NodeType": "interface"
+  },
+  {
+    "Name": "System.Collections.Generic.IReadOnlyList\u00601[System.Int32]",
+    "Adj": [
+      "System.Collections.Generic.IReadOnlyCollection\u00601[System.Int32]",
+      "System.Collections.Generic.IEnumerable\u00601[System.Int32]",
+      "System.Collections.IEnumerable"
+    ],
+    "NodeType": "interface"
+  },
+  {
+    "Name": "System.Collections.Generic.IReadOnlyCollection\u00601[System.Int32]",
+    "Adj": [
+      "System.Collections.Generic.IEnumerable\u00601[System.Int32]",
+      "System.Collections.IEnumerable"
+    ],
+    "NodeType": "interface"
+  },
+  {
     "Name": "System.Collections.Generic.List\u00601[T]",
     "Adj": [
       "System.Object",
@@ -12,11 +118,6 @@
       "System.Collections.Generic.IReadOnlyList\u00601[T]",
       "System.Collections.Generic.IReadOnlyCollection\u00601[T]"
     ],
-    "NodeType": "class"
-  },
-  {
-    "Name": "System.Object",
-    "Adj": [],
     "NodeType": "class"
   },
   {
@@ -38,26 +139,6 @@
   },
   {
     "Name": "System.Collections.Generic.IEnumerable\u00601[T]",
-    "Adj": [
-      "System.Collections.IEnumerable"
-    ],
-    "NodeType": "interface"
-  },
-  {
-    "Name": "System.Collections.IEnumerable",
-    "Adj": [],
-    "NodeType": "interface"
-  },
-  {
-    "Name": "System.Collections.IList",
-    "Adj": [
-      "System.Collections.ICollection",
-      "System.Collections.IEnumerable"
-    ],
-    "NodeType": "interface"
-  },
-  {
-    "Name": "System.Collections.ICollection",
     "Adj": [
       "System.Collections.IEnumerable"
     ],
@@ -155,16 +236,5 @@
     "Name": "System.Runtime.Serialization.IDeserializationCallback",
     "Adj": [],
     "NodeType": "interface"
-  },
-  {
-    "Name": "System.Collections.Generic.Queue\u00601[T]",
-    "Adj": [
-      "System.Object",
-      "System.Collections.Generic.IEnumerable\u00601[T]",
-      "System.Collections.IEnumerable",
-      "System.Collections.ICollection",
-      "System.Collections.Generic.IReadOnlyCollection\u00601[T]"
-    ],
-    "NodeType": "class"
   }
 ]

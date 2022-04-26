@@ -6,19 +6,16 @@ using System.Diagnostics;
 using InheritanceSearch;
 using static System.Console;
 using System.IO;
+using System.Text.Json;
 
 class Program
 {
     static void Main(string[] args)
     {
         InheritanceGraph inhGraph = new InheritanceGraph();
+        inhGraph.ConstructGraph(typeof(int[]));
         inhGraph.ConstructGraph(typeof(List<>));
         inhGraph.ConstructGraph(typeof(Dictionary<,>));
-        inhGraph.ConstructGraph(typeof(Queue<>));
-        
-        inhGraph.Graph.Vertices[new SerializableType(typeof(Queue<>))].ForEach(node => {
-            WriteLine(node.typeName);
-        });
 
         inhGraph.Dump();
 

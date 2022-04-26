@@ -21,8 +21,11 @@ namespace InheritanceSearch
         public void ConstructGraph(Type targetType)
         {
             Graph.AddVertex(new SerializableType(targetType));
+            Stack<Type> interfaces = new Stack<Type>();
+            interfaces.Push(targetType);
 
             // base class
+
             if(!targetType.IsInterface)
             {
                 var tclass = targetType;
@@ -32,14 +35,13 @@ namespace InheritanceSearch
                     var super = tclass.BaseType;
                     Graph.AddVertex(new SerializableType(super));
                     Graph.AddEdge(new SerializableType(tclass), new SerializableType(super));
+                    interfaces.Push(super);
+
                     tclass = super;
                 }
             }
 
             // interfaces
-            Stack<Type> interfaces = new Stack<Type>();
-            interfaces.Push(targetType);
-
             while(interfaces.Count != 0)
             {
                 Type tinterface = interfaces.Pop();
