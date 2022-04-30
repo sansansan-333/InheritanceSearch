@@ -1,46 +1,5 @@
 digraph {
 	node [shape=rect]
-	"System.Int32[]" [color=green]
-	"System.Int32[]" -> "System.Array"
-	"System.Int32[]" -> "System.Collections.Generic.IList`1[System.Int32]"
-	"System.Int32[]" -> "System.Collections.Generic.ICollection`1[System.Int32]"
-	"System.Int32[]" -> "System.Collections.Generic.IEnumerable`1[System.Int32]"
-	"System.Int32[]" -> "System.Collections.Generic.IReadOnlyList`1[System.Int32]"
-	"System.Int32[]" -> "System.Collections.Generic.IReadOnlyCollection`1[System.Int32]"
-	"System.Array" [color=green]
-	"System.Array" -> "System.Object"
-	"System.Array" -> "System.ICloneable"
-	"System.Array" -> "System.Collections.IList"
-	"System.Array" -> "System.Collections.ICollection"
-	"System.Array" -> "System.Collections.IEnumerable"
-	"System.Array" -> "System.Collections.IStructuralComparable"
-	"System.Array" -> "System.Collections.IStructuralEquatable"
-	"System.Object" [color=green]
-	"System.ICloneable" [color=blue]
-	"System.Collections.IList" [color=blue]
-	"System.Collections.IList" -> "System.Collections.ICollection"
-	"System.Collections.IList" -> "System.Collections.IEnumerable"
-	"System.Collections.ICollection" [color=blue]
-	"System.Collections.ICollection" -> "System.Collections.IEnumerable"
-	"System.Collections.IEnumerable" [color=blue]
-	"System.Collections.IStructuralComparable" [color=blue]
-	"System.Collections.IStructuralEquatable" [color=blue]
-	"System.Collections.Generic.IList`1[System.Int32]" [color=blue]
-	"System.Collections.Generic.IList`1[System.Int32]" -> "System.Collections.Generic.ICollection`1[System.Int32]"
-	"System.Collections.Generic.IList`1[System.Int32]" -> "System.Collections.Generic.IEnumerable`1[System.Int32]"
-	"System.Collections.Generic.IList`1[System.Int32]" -> "System.Collections.IEnumerable"
-	"System.Collections.Generic.ICollection`1[System.Int32]" [color=blue]
-	"System.Collections.Generic.ICollection`1[System.Int32]" -> "System.Collections.Generic.IEnumerable`1[System.Int32]"
-	"System.Collections.Generic.ICollection`1[System.Int32]" -> "System.Collections.IEnumerable"
-	"System.Collections.Generic.IEnumerable`1[System.Int32]" [color=blue]
-	"System.Collections.Generic.IEnumerable`1[System.Int32]" -> "System.Collections.IEnumerable"
-	"System.Collections.Generic.IReadOnlyList`1[System.Int32]" [color=blue]
-	"System.Collections.Generic.IReadOnlyList`1[System.Int32]" -> "System.Collections.Generic.IReadOnlyCollection`1[System.Int32]"
-	"System.Collections.Generic.IReadOnlyList`1[System.Int32]" -> "System.Collections.Generic.IEnumerable`1[System.Int32]"
-	"System.Collections.Generic.IReadOnlyList`1[System.Int32]" -> "System.Collections.IEnumerable"
-	"System.Collections.Generic.IReadOnlyCollection`1[System.Int32]" [color=blue]
-	"System.Collections.Generic.IReadOnlyCollection`1[System.Int32]" -> "System.Collections.Generic.IEnumerable`1[System.Int32]"
-	"System.Collections.Generic.IReadOnlyCollection`1[System.Int32]" -> "System.Collections.IEnumerable"
 	"System.Collections.Generic.List`1[T]" [color=green]
 	"System.Collections.Generic.List`1[T]" -> "System.Object"
 	"System.Collections.Generic.List`1[T]" -> "System.Collections.Generic.IList`1[T]"
@@ -51,6 +10,7 @@ digraph {
 	"System.Collections.Generic.List`1[T]" -> "System.Collections.ICollection"
 	"System.Collections.Generic.List`1[T]" -> "System.Collections.Generic.IReadOnlyList`1[T]"
 	"System.Collections.Generic.List`1[T]" -> "System.Collections.Generic.IReadOnlyCollection`1[T]"
+	"System.Object" [color=green]
 	"System.Collections.Generic.IList`1[T]" [color=blue]
 	"System.Collections.Generic.IList`1[T]" -> "System.Collections.Generic.ICollection`1[T]"
 	"System.Collections.Generic.IList`1[T]" -> "System.Collections.Generic.IEnumerable`1[T]"
@@ -60,6 +20,12 @@ digraph {
 	"System.Collections.Generic.ICollection`1[T]" -> "System.Collections.IEnumerable"
 	"System.Collections.Generic.IEnumerable`1[T]" [color=blue]
 	"System.Collections.Generic.IEnumerable`1[T]" -> "System.Collections.IEnumerable"
+	"System.Collections.IEnumerable" [color=blue]
+	"System.Collections.IList" [color=blue]
+	"System.Collections.IList" -> "System.Collections.ICollection"
+	"System.Collections.IList" -> "System.Collections.IEnumerable"
+	"System.Collections.ICollection" [color=blue]
+	"System.Collections.ICollection" -> "System.Collections.IEnumerable"
 	"System.Collections.Generic.IReadOnlyList`1[T]" [color=blue]
 	"System.Collections.Generic.IReadOnlyList`1[T]" -> "System.Collections.Generic.IReadOnlyCollection`1[T]"
 	"System.Collections.Generic.IReadOnlyList`1[T]" -> "System.Collections.Generic.IEnumerable`1[T]"
@@ -67,6 +33,12 @@ digraph {
 	"System.Collections.Generic.IReadOnlyCollection`1[T]" [color=blue]
 	"System.Collections.Generic.IReadOnlyCollection`1[T]" -> "System.Collections.Generic.IEnumerable`1[T]"
 	"System.Collections.Generic.IReadOnlyCollection`1[T]" -> "System.Collections.IEnumerable"
+	"System.Collections.Generic.Queue`1[T]" [color=green]
+	"System.Collections.Generic.Queue`1[T]" -> "System.Object"
+	"System.Collections.Generic.Queue`1[T]" -> "System.Collections.Generic.IEnumerable`1[T]"
+	"System.Collections.Generic.Queue`1[T]" -> "System.Collections.IEnumerable"
+	"System.Collections.Generic.Queue`1[T]" -> "System.Collections.ICollection"
+	"System.Collections.Generic.Queue`1[T]" -> "System.Collections.Generic.IReadOnlyCollection`1[T]"
 	"System.Collections.Generic.Dictionary`2[TKey,TValue]" [color=green]
 	"System.Collections.Generic.Dictionary`2[TKey,TValue]" -> "System.Object"
 	"System.Collections.Generic.Dictionary`2[TKey,TValue]" -> "System.Collections.Generic.IDictionary`2[TKey,TValue]"

@@ -1,4 +1,4 @@
-echo 'start.sh'
+echo 'Generating graph...'
 
 BASEDIR=$(dirname $0)
 source ${BASEDIR}/py3env/bin/activate

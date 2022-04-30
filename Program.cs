@@ -1,24 +1,45 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using System.Diagnostics;
-using InheritanceSearch;
-using static System.Console;
 using System.IO;
-using System.Text.Json;
+using ConsoleUtility;
+using InheritanceSearch;
 
 class Program
 {
     static void Main(string[] args)
     {
         InheritanceGraph inhGraph = new InheritanceGraph();
-        inhGraph.ConstructGraph(typeof(int[]));
-        inhGraph.ConstructGraph(typeof(List<>));
-        inhGraph.ConstructGraph(typeof(Dictionary<,>));
 
+        var allTypes = new List<Type>();
+        foreach (var assembly in AppDomain.CurrentDomain.GetAssemblies()) {
+            foreach (var type in assembly.GetTypes()) {
+                allTypes.Add(type);
+            }
+        }
+
+        ConsoleIO.ClearConsoleBuffer();
+
+        // choose types to construct graph
+        while(true)
+        {
+            Console.Write("Add a type [a] or Generate a graph [g]: ");
+
+            var c = Console.ReadKey().KeyChar;
+            Console.WriteLine();
+            if(c == 'a')
+            {
+                var t = ConsoleIO.WaitForInput(allTypes);
+                inhGraph.ConstructGraph(t);
+            }
+            else if(c == 'g') break;
+            else continue;
+        }
+
+        // dump graph data
         inhGraph.Dump();
 
+        // call python script
         var terminalPath = "/bin/bash";
         var scriptPath   = Directory.GetCurrentDirectory() + "/python/start.sh";
 
